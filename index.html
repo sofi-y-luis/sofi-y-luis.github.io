@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Invitación de matrimonio S&L" />
+  <meta name="theme-color" content="#8f6f64" />
+  <title>Invitación S&L</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="page-shell">
+    <section class="hero section" id="inicio">
+      <div class="floral floral-top" aria-hidden="true"></div>
+      <img class="logo" src="assets/logo-sl.svg" alt="Logo S&L" />
+      <p class="eyebrow">Nos casamos</p>
+      <h1><span id="nombreNovia">Sofía</span> <span class="amp">&</span> <span id="nombreNovio">Luis</span></h1>
+      <p class="date-line" id="fechaPrincipal">10 de octubre de 2026 · 17:00 hrs</p>
+      <p class="intro">Queremos compartir este día con las personas que han sido parte de nuestra historia.</p>
+      <a class="button primary" href="#confirmar">Confirmar asistencia</a>
+    </section>
+
+    <section class="section card countdown-card" id="cuenta-regresiva">
+      <p class="eyebrow">Falta</p>
+      <div class="countdown" aria-live="polite">
+        <div><strong id="days">00</strong><span>Días</span></div>
+        <div><strong id="hours">00</strong><span>Horas</span></div>
+        <div><strong id="minutes">00</strong><span>Minutos</span></div>
+        <div><strong id="seconds">00</strong><span>Segundos</span></div>
+      </div>
+    </section>
+
+    <section class="section two-columns">
+      <article class="card">
+        <p class="eyebrow">Ceremonia</p>
+        <h2 id="ceremoniaNombre">Iglesia Cerro Blanco</h2>
+        <p id="ceremoniaDireccion">Til Til, Región Metropolitana</p>
+        <p class="note">Se solicita llegar al menos 30 minutos antes para iniciar puntualmente.</p>
+        <a class="button secondary" id="mapsCeremonia" href="#" target="_blank" rel="noopener">Ver ubicación</a>
+      </article>
+
+      <article class="card">
+        <p class="eyebrow">Celebración</p>
+        <h2 id="celebracionNombre">Lugar por confirmar</h2>
+        <p id="celebracionDireccion">Pronto compartiremos más detalles.</p>
+        <p class="note">La información puede editarse directamente en el archivo <code>script.js</code>.</p>
+      </article>
+    </section>
+
+    <section class="section card rules" id="dress-code">
+      <p class="eyebrow">Dress code</p>
+      <h2>Vestimenta formal</h2>
+      <p>Reservamos algunos tonos para la novia y el entorno visual del matrimonio. Agradecemos evitar vestidos o trajes en color blanco, beige, tonos similares y azul navy.</p>
+      <p>La invitación es personal y válida únicamente para la persona invitada.</p>
+    </section>
+
+    <section class="section card" id="confirmar">
+      <p class="eyebrow">RSVP</p>
+      <h2>Confirmación de asistencia</h2>
+      <p>Confirma tu asistencia mediante WhatsApp. Puedes cambiar el número y el mensaje en <code>script.js</code>.</p>
+      <a class="button primary" id="whatsappButton" href="#" target="_blank" rel="noopener">Confirmar por WhatsApp</a>
+    </section>
+  </main>
+
+  <footer>
+    <p>S&L · Con cariño</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
