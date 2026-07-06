@@ -5,7 +5,7 @@ const WEDDING = {
   ceremony: {
     name: "Iglesia de Cerro Blanco, Til Til",
     address: "Panamericana Norte S/N, kilómetro 38, Til Til",
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Iglesia%20de%20Cerro%20Blanco%20Panamericana%20Norte%20S%2FN%20Kil%C3%B3metro%2038%20Til%20Til"
+    mapsUrl: "https://maps.app.goo.gl/R6tNYhjFDdFcVDEN8"
   },
   reception: {
     name: "Centro de Eventos",
