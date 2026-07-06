@@ -5,12 +5,14 @@ const WEDDING = {
   ceremony: {
     name: "Iglesia de Cerro Blanco, Til Til",
     address: "Panamericana Norte S/N, kilómetro 38, Til Til",
-    mapsUrl: "https://maps.app.goo.gl/R6tNYhjFDdFcVDEN8"
+    mapsUrl: "https://www.google.com/maps/place/Iglesia+de+Cerro+Blanco/@-33.1597855,-70.8304705,1011m/data=!3m2!1e3!4b1!4m6!3m5!1s0x966299003ed1f501:0x5eb46f5c49fae7a2!8m2!3d-33.1597855!4d-70.8278902!16s%2Fg%2F11xf38mxfp?entry=ttu&g_ep=EgoyMDI2MDYyOS4wIKXMDSoASAFQAw%3D%3D",
+    embedUrl: "https://www.google.com/maps?q=Iglesia%20de%20Cerro%20Blanco%2C%20Til%20Til&z=15&output=embed"
   },
   reception: {
     name: "Centro de Eventos",
     address: "Andrés Bello 398, Til Til",
-    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Andr%C3%A9s%20Bello%20398%20Til%20Til"
+    mapsUrl: "https://www.google.com/maps/search/?api=1&query=Andr%C3%A9s%20Bello%20398%20Til%20Til",
+    embedUrl: "https://www.google.com/maps?q=Andr%C3%A9s%20Bello%20398%2C%20Til%20Til&z=15&output=embed"
   },
   contact: {
     whatsappNumber: "56942700723"
@@ -93,6 +95,8 @@ function updateCountdown() {
 function setupLinks() {
   const mapsCeremonia = $("#mapsCeremonia");
   const mapsFiesta = $("#mapsFiesta");
+  const ceremonyEmbed = $("#ceremonyMapEmbed");
+  const receptionEmbed = $("#receptionMapEmbed");
   const photosButton = $("#photosButton");
   const spotifyButton = $("#spotifyButton");
   const photosButtonText = $("#photosButtonText");
@@ -100,6 +104,8 @@ function setupLinks() {
 
   if (mapsCeremonia) mapsCeremonia.href = WEDDING.ceremony.mapsUrl;
   if (mapsFiesta) mapsFiesta.href = WEDDING.reception.mapsUrl;
+  if (ceremonyEmbed) ceremonyEmbed.src = WEDDING.ceremony.embedUrl;
+  if (receptionEmbed) receptionEmbed.src = WEDDING.reception.embedUrl;
   if (photosButton) photosButton.href = WEDDING.links.googlePhotos;
   if (photosButtonText) photosButtonText.href = WEDDING.links.googlePhotos;
   if (spotifyButton) spotifyButton.href = WEDDING.links.spotify;
