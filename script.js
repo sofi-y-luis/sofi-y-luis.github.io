@@ -13,11 +13,11 @@ const WEDDING = {
     mapsUrl: "https://www.google.com/maps/search/?api=1&query=Andr%C3%A9s%20Bello%20398%20Til%20Til"
   },
   contact: {
-    whatsappNumber: "56937379388"
+    whatsappNumber: "56942700723"
   },
   links: {
-    googlePhotos: "#",
-    spotify: "#"
+    googlePhotos: "https://photos.app.goo.gl/wu8K3VKtTCs8gnqh7",
+    spotify: "https://open.spotify.com/playlist/4hy8zOiTNJQg7jGgVLXBJX?si=DUFQguI0Q0iU609MLDPADA&pt=0107e08eef05be227965b9aea9d40bc1&pi=sxgLYykGTDKPs"
   },
   bank: {
     holder: "Por definir",
@@ -95,13 +95,17 @@ function setupLinks() {
   const mapsFiesta = $("#mapsFiesta");
   const photosButton = $("#photosButton");
   const spotifyButton = $("#spotifyButton");
+  const photosButtonText = $("#photosButtonText");
+  const spotifyButtonText = $("#spotifyButtonText");
 
   if (mapsCeremonia) mapsCeremonia.href = WEDDING.ceremony.mapsUrl;
   if (mapsFiesta) mapsFiesta.href = WEDDING.reception.mapsUrl;
   if (photosButton) photosButton.href = WEDDING.links.googlePhotos;
+  if (photosButtonText) photosButtonText.href = WEDDING.links.googlePhotos;
   if (spotifyButton) spotifyButton.href = WEDDING.links.spotify;
+  if (spotifyButtonText) spotifyButtonText.href = WEDDING.links.spotify;
 
-  [photosButton, spotifyButton].forEach((button) => {
+  [photosButton, photosButtonText, spotifyButton, spotifyButtonText].forEach((button) => {
     if (!button) return;
     button.addEventListener("click", (event) => {
       if (button.getAttribute("href") === "#") {

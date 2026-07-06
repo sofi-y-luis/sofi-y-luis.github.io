@@ -28,9 +28,9 @@ Los datos principales están en `script.js`, dentro del bloque `WEDDING`.
 Debes revisar especialmente:
 
 ```js
-contact.whatsappNumber
-links.googlePhotos
-links.spotify
+contact.whatsappNumber = 56942700723
+links.googlePhotos = https://photos.app.goo.gl/wu8K3VKtTCs8gnqh7
+links.spotify = playlist colaborativa Spotify configurada
 bank
 ```
 
@@ -64,3 +64,8 @@ actualizar_y_subir.bat
 - Portada inicial devuelta al estilo anterior: sin ramos florales grandes, manteniendo solo adornos sutiles.
 - Se mantienen las flores decorativas en las secciones posteriores.
 - En código de vestimenta se eliminó la paleta de colores sugeridos; se conserva la restricción de blanco, marfil, beige, tonos similares y azul navy.
+
+
+## Actualización v6
+
+Se incorporaron los enlaces reales de Google Photos y Spotify, el número de confirmación +56942700723 y códigos QR para álbum colaborativo y playlist.
